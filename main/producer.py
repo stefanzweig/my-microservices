@@ -1,6 +1,6 @@
 import pika, json
 
-params = pika.URLParameters('your_rabbitmq_url')
+params = pika.URLParameters('amqp://host.docker.internal:5672')
 
 connection = pika.BlockingConnection(params)
 
